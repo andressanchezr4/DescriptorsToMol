@@ -4,23 +4,9 @@
 @andressanchezr4
 """
 
-import time
-start = time.time()
 import tensorflow as tf
-import pandas as pd
-import matplotlib.pyplot as plt
-import math
 import numpy as np
 import os
-import pickle
-import random
-from natsort import natsorted
-import os
-import pickle
-import random
-from sklearn.metrics import mean_squared_error
-from sklearn.metrics import auc
-import sys
 
 from rdkit import Chem
 from rdkit.Chem import AllChem
@@ -42,7 +28,6 @@ logger = logging.getLogger("moleculekit")
 logger.setLevel(logging.ERROR)
 from rdkit.Geometry import Point3D
 
-from multiprocessing import Pool
 import multiprocessing as mp
 from rdkit.Chem import rdmolfiles
 
