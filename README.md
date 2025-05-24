@@ -1,5 +1,5 @@
 # VoxelMolBuilder
-This repo contains a proof of concept of a model meant to reconstruct a molecule atoms from the descriptors. 
+This repo contains a proof of concept of a model meant to reconstruct a molecule atoms from its voxel descriptors. 
 
 ## Script Description
 * run.py --> End to end analysis.
