@@ -12,7 +12,7 @@ import tensorflow as tf
 
 from Tools import check_predicted_voxels, VoxelTFRecordLoader
 from Model_Autoencoder import VoxelEncoder, VoxelDecoder, convAE
-from smile2voxel import RdkitMols2Voxels, CheckVoxel
+from Mol2voxel import RdkitMols2Voxels, CheckVoxel
 
 ##################################
 #### DATA LOADING & VOXEL GEN ####
@@ -41,7 +41,6 @@ checking.check_index(path2savesdf, 10)
 ##################################
 ##### PREPARE MODEL TRAINING #####
 ##################################
-
 os.environ["CUDA_VISIBLE_DEVICES"] = "1" 
 tfr = VoxelTFRecordLoader(path2savetfrvoxels, batch_shape)
 train_dataset, val_dataset = tfr.get_dataset_generators()
